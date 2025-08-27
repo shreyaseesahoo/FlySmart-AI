@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google fonts link -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Font awesome link -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- My CSS link -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS  -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap JS Bundle  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+    <title>Flight Booking Website</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index2.html">
+                <div class="nav-icon">
+                    <i class="fa-solid fa-plane"></i>
+                </div>
+                
+                <div class="nav-logo-content">
+                    <div class="nav-logo-name">FlySmart AI</div>
+                    <div class="nav-logo-para">Intelligent Flight Booking</div>
+                </div>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">My Trips</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">About Us</a>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-outline-primary">Login</button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-primary">Sign up</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+
+        <!-- Hero Section Content -->
+        <div class="hero-section-content">
+            <p class="heading">Your <span>AI-Powered</span> Journey Starts Here</p>
+
+            <p class="para">Smart algorithms find perfect flights while you relax</p>
+
+            <div class="features">
+                <div class="box">
+                    <div class="heading">500K+</div>
+                    <div class="para">Happy Travelers</div>
+                </div>
+                <div class="box">
+                    <div class="heading">24/7</div>
+                    <div class="para">AI Assistance</div>
+                </div>
+                <div class="box">
+                    <div class="heading">95%</div>
+                    <div class="para">Savings Found</div>
+                </div>
+            </div>
+
+            <button class="btn">
+                <i class="fa-solid fa-rocket"></i>
+                <p>Start Exploring</p>
+            </button>
+        </div>
+
+        
+        
+        <!-- Hero Section Image -->
+        <div class="hero-section-img">
+            <i class="fa-solid fa-earth-americas"></i>
+            <div class="flight">
+                <i class="fa-solid fa-plane"></i>
+            </div>
+        </div>
+
+        <!-- Leading Airlines -->
+
+        <div class="leading-airlines">
+            <div class="heading">Popular domestic airlines</div>
+            <div class="scrolling-airlines">
+                <div class="airline-name">IndiGo</div>
+                <div class="airline-name">Air India</div>
+                <div class="airline-name">Air India Express</div>
+                <div class="airline-name">Akasa Air</div>
+                <div class="airline-name">Alliance Air</div>
+                <div class="airline-name">SpiceJet</div>
+                <div class="airline-name">Emirates</div>
+                <div class="airline-name">flydubai</div>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <!-- Flight Booking Form -->
+
+    <div class="flight-booking-form">
+        <div class="trip-type">
+            <div class="btn">Round Trip</div>
+            <div class="btn">One Way</div>
+        </div>
+
+        <div class="input-info">
+            <div class="travel-input">
+                <label for="box1">From</label>
+                <div class="input-box">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="text" class="box" id="box1" placeholder="City">
+                </div>
+            </div>
+
+            <div class="travel-input">
+                <label for="box2">To</label>
+                <div class="input-box">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="text" class="box" id="box2" placeholder="City">
+                </div>
+            </div>
+            
+            <div class="travel-input">
+                <label for="box3">Departure</label>
+                <div class="input-box">
+                    <i class="fa-regular fa-calendar"></i>
+                    <input type="date" class="box" id="box3">
+                </div>
+            </div>
+            
+            <div class="travel-input">
+                <label for="box4">Return</label>
+                <div class="input-box">
+                    <i class="fa-regular fa-calendar"></i>
+                    <input type="date" class="box" id="box4">
+                </div>
+            </div>
+            
+            <div class="travel-input">
+                <label for="box5">Passengers</label>
+                <div class="input-box">
+                    <i class="fa-solid fa-user-group"></i>
+                    <input type="number" class="box" id="box5" value="0">
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+            </div>
+            
+            <div class="travel-input">
+                <label for="box6">Class</label>
+                <div class="input-box">
+                    <i class="fa-solid fa-chair"></i>
+                    <input type="text" class="box" id="box6" value="Economy">
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+            </div>
+              
+        </div>
+
+        <button class="search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <p>Search flights</p>
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+    </div>
+
+
+    <!-- Offers Carousel  -->
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./Img/carousel-img-7.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./Img/carousel-img-8.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./Img/carousel-img-3.jpg" class="d-block w-100" alt="...">
+            </div>
+            
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Offers -->
+
+    <div class="offer-container">
+        <div class="heading">Offers for you</div>
+        <p>Exclusive bank offers and discounts</p>
+        <div class="card-container">
+            <div class="img-card one"></div>
+            <div class="img-card two"></div>
+            <div class="img-card three"></div>
+            <div class="img-card four"></div>
+            <div class="img-card five"></div>
+            <div class="img-card six"></div>
+            <div class="img-card seven"></div>
+            <div class="img-card eight"></div>
+        </div>
+        <button class="search-btn">
+            <p>View All Offers</p>
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+    </div>
+
+    <!-- Why We -->
+
+    <div class="why-we">
+        <p class="heading">Why Travelers Choose FlySmart AI</p>
+        <p class="para">The intelligent way to book flights</p>
+        <div class="card-container">
+
+            <div class="card card-one">
+                <div class="icon">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+                <div class="card-heading">Smart Recommendations</div>
+                <div class="card-para">Our AI analyzes millions of options to find flights that match your preferences and budget.</div>
+            </div>
+
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <div class="card-heading">Instant Alerts</div>
+                <div class="card-para">Get notified immediately when prices drop or better routes become available.</div>
+            </div>
+
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+                <div class="card-heading">AI Assistant</div>
+                <div class="card-para">Our virtual travel expert helps with everything from booking to boarding.</div>
+            </div>
+
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <div class="card-heading">Price Prediction</div>
+                <div class="card-para">We'll tell you if you should book now or wait for a better deal.</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Popular Destinations -->
+
+    <div class="popular-destinations">
+        <p class="heading">Popular Destinations</p>
+        <p class="para">Discover amazing places around the world</p>
+
+        <div class="card-container">
+            <div class="img-card card-taj-mahal">
+                <div class="img taj-mahal"></div>
+                <div class="content">
+                    <p class="name">Taj Mahal, <span>Agra</span></p>
+                    <div class="price-book-container">
+                        <p class="starting-price">&#8377;6,750 <span>onwards</span></p>
+                        <button>Book Flight</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="img-card card-srinagar">
+                <div class="img srinagar"></div>
+                <div class="content">
+                    <p class="name">Srinagar, <span>Jammu & Kashmir</span></p>
+                    <div class="price-book-container">
+                        <p class="starting-price">&#8377;7,540 <span>onwards</span></p>
+                        <button>Book Flight</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="img-card card-jaipur">
+                <div class="img jaipur"></div>
+                <div class="content">
+                    <p class="name">Jaipur, <span>Rajasthan</span></p>
+                    <div class="price-book-container">
+                        <p class="starting-price">&#8377;6,910 <span>onwards</span></p>
+                        <button>Book Flight</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="img-card card-madurai">
+                <div class="img madurai"></div>
+                <div class="content">
+                    <p class="name">Madurai, <span>Tamil Nadu</span></p>
+                    <div class="price-book-container">
+                        <p class="starting-price">&#8377;1,750 <span>onwards</span></p>
+                        <button>Book Flight</button>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- <div class="img-card card-andaman-nicobar">
+                <div class="img andaman-nicobar"></div>
+                <div class="content">
+                    <p class="name">Andaman & Nicobar</p>
+                    <p class="location">Bay of Bengal</p>
+                    <div class="price-book-container">
+                        <p class="starting-price">&#8377;1,750 <span>onwards</span></p>
+                        <button>Book Flight</button>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="img-card card-dubai">
+                <div class="img dubai"></div>
+                <div class="content">
+                    <p class="name">Dubai, <span>UAE</span></p>
+                    <div class="price-book-container">
+                        <p class="starting-price">&#8377;18,950 <span>onwards</span></p>
+                        <button>Book Flight</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="img-card card-singapore">
+                <div class="img singapore"></div>
+                <div class="content">
+                    <p class="name">Singapore, <span>Southeast Asia</span></p>
+                    <div class="price-book-container">
+                        <p class="starting-price">&#8377;13,580 <span>onwards</span></p>
+                        <button>Book Flight</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="img-card card-bangkok">
+                <div class="img bangkok"></div>
+                <div class="content">
+                    <p class="name">Bangkok, <span>Thailand</span></p>
+                    <div class="price-book-container">
+                        <p class="starting-price">&#8377;17,930 <span>onwards</span></p>
+                        <button>Book Flight</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="img-card card-maldives">
+                <div class="img maldives"></div>
+                <div class="content">
+                    <p class="name">Maldives, <span>Indian Ocean</span></p>
+                    <div class="price-book-container">
+                        <p class="starting-price">&#8377;13,850 <span>onwards</span></p>
+                        <button>Book Flight</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="img-card card-bali">
+                <div class="img bali"></div>
+                <div class="content">
+                    <p class="name">Bali, <span>Indonesia</span></p>
+                    <div class="price-book-container">
+                        <p class="starting-price">&#8377;15,940 <span>onwards</span></p>
+                        <button>Book Flight</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="search-btn">
+            <p>Explore All Destinations</p>
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+    </div>
+
+    <!-- People Comments -->
+
+    <div class="people-comments">
+        <p class="heading">What Our Travelers Say</p>
+        <p class="para">Join thousands of satisfied customers</p>
+        <div class="comment-container">
+
+            <div class="comment-box frequent-user-one">
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="feedback">"FlySmart AI saved me Rs. 320 on my trip to Barcelona by recommending the perfect flight times and connections. The price prediction feature was spot on!"</div>
+                <div class="user-profile">
+                    <div class="logo">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="logo-content">
+                        <div class="name">Ankit Banerjee</div>
+                        <div class="profession">Frequent Traveller</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment-box business-user">
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="feedback">"The AI assistant helped me rebook my flights automatically when my connection was canceled. It found a better route and got me home faster!"</div>
+                <div class="user-profile">
+                    <div class="logo">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <div class="logo-content">
+                        <div class="name">Aditya Sarkar</div>
+                        <div class="profession">Business Traveller</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment-box student-user">
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="feedback">"The AI assistant helped me rebook my flights automatically when my connection was canceled. It found a better route and got me home faster!"</div>
+                <div class="user-profile">
+                    <div class="logo">
+                        <i class="fa-solid fa-user-graduate"></i>
+                    </div>
+                    <div class="logo-content">
+                        <div class="name">Anannya Das</div>
+                        <div class="profession">Student Traveller</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment-box frequent-user-two">
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="feedback">"I was able to book my flight to Delhi in just a few minutes, and the interface was so easy to use. The prices were far better than other apps I've tried."</div>
+                <div class="user-profile">
+                    <div class="logo">
+                        <i class="fa-solid fa-user-graduate"></i>
+                    </div>
+                    <div class="logo-content">
+                        <div class="name">Pratistha Dey</div>
+                        <div class="profession">Frequent Traveller</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="search-btn">
+            <p>View all comments</p>
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+    </div>
+
+    <!-- Download App -->
+
+    <div class="download-app">
+        <div class="content">
+            <div class="heading">Take FlySmart AI With You</div>
+            <div class="para">Download our app for real-time flight updates, mobile boarding passes and AI travel assistance wherever you go.</div>
+            <div class="download-btn">
+                <button class="btn">
+                    <i class="fa-brands fa-apple"></i>
+                    <div class="btn-content">
+                        <div>Download on the</div>
+                        <div class="name">App Store</div>
+                    </div>
+                </button>
+                <button class="btn">
+                    <i class="fa-brands fa-google-play"></i>
+                    <div class="btn-content">
+                        <div>Get it on</div>
+                        <div class="name">Google Play</div>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <div class="phone">
+            <div class="heading">
+                <div class="logo">
+                    <i class="fa-solid fa-plane"></i>
+                </div>
+                <div class="name">FlySmart AI</div>
+            </div>
+
+            <div class="price-alert">
+                <div class="icon">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+                <div class="content">
+                    <div class="heading">Price Alert !</div>
+                    <div class="para">Your watched flight to Tokyo has been dropped by &#8377;1,080</div>
+                </div>
+            </div>
+
+            <div class="ticket">
+                <div class="travel-path">
+                    <p>JFK</p>
+                    <i class="fa-solid fa-plane"></i>
+                    <P>HND</P>
+                </div>
+
+                <div class="date">
+                    Oct 15-Oct 22
+                </div>
+                <div class="price-drop">
+                    <div class="original">&#8377;56,247</div>
+                    <div class="new">&#8377;55,167</div>
+                </div>
+                <button class="book-btn">
+                    Book Now
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer">
+        <div class="about-site">
+            <div class="heading">
+                <div class="logo">
+                    <i class="fa-solid fa-plane"></i>
+                </div>
+                <div class="name">FlySmart AI</div>
+            </div>
+
+            <p class="para">Intelligent flight booking powered by artificial intelligence.</p>
+
+            <div class="social-medias">
+                <div class="media fb">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div class="media twit">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="media insta">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="media link">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="links">
+            <div class="company">
+                <div class="heading">Company</div>
+                <ul>
+                    <li>About Us</li>
+                    <li>Careers</li>
+                    <li>Press</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+            <div class="support">
+                <div class="heading">Support</div>
+                <ul>
+                    <li>Help Centre</li>
+                    <li>Contact Us</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms of Service</li>
+                </ul>
+            </div>
+            <div class="resources">
+                <div class="heading">Resources</div>
+                <ul>
+                    <li>Travel Guides</li>
+                    <li>Airline Fees</li>
+                    <li>Baggage Rules</li>
+                    <li>Visa Requirements</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="line-container">
+        <div class="hr"></div>
+    </div>
+
+    <div class="footer-end-line">
+        <i class="fa-regular fa-copyright"></i>
+        <p>2025 Le Travenues Technology Ltd. India. All brands are trademarks of their respective owners.</p>
+    </div>
+    
+</body>
+</html>
